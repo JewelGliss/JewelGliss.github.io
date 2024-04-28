@@ -1,0 +1,388 @@
+body{
+	background: #1A1A1C;
+	color: #e1e1e1;
+}
+
+.box{
+	margin: auto;
+	display:inline-block;
+	text-align: center;
+}
+
+.codedText {
+	font-family: "Comfortaa variant0", "Comfortaa", sans-serif, nasinNanpaWeb;
+	font-weight: bold;
+	letter-spacing: .175em;
+	display:inline-block;
+	margin: 0;
+}
+
+@font-face {
+  font-family: nasinNanpaWeb;
+  src: url("../fonts/nasin-nanpa-4.0.0.otf");
+}
+
+#CopyRight{
+	font-family: "Times New Roman", Times, serif;
+}
+
+.fadedCodedText {
+	font-family: "Comfortaa variant0", "Comfortaa", sans-serif, nasinNanpaWeb;
+	font-size: .94em;
+	letter-spacing: -.075em;
+	color: #7d575f;
+	opacity: 1;
+}
+
+.eighthWide {
+	width: calc(12.5% - 1em);
+}
+
+.quaterWide {
+	width: calc(25% - 1em);
+}
+
+.halfWide {
+	width: calc(50% - 1em);
+}
+
+.fullWide {
+	width: calc(100% - 1em);
+}
+
+.eighthWide, .quaterWide, .halfWide, .fullWide {
+	margin: 0 .25em;
+	height: auto;
+	vertical-align: middle;
+	
+}
+
+#Links{
+	font-size: min(2.35vw, 1em);
+}
+
+#nameBlock {
+	position: absolute;
+	top: 0;
+	left:0;
+	display: inline-block;
+	
+}
+
+#menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-family: "Comfortaa variant0", "Comfortaa", sans-serif, nasinNanpaWeb;
+	font-size: .7em;
+	display: inline-block;
+	text-align: right;
+}
+
+img{
+	display:inline-block;
+	border-radius: .1em;
+	filter: drop-shadow(0.5px 0.4px rgba(0,0,1,1)) drop-shadow(0.5px 0.9px 0.8px rgba(0,0,1,.82)) drop-shadow(2px 4.1px 3.4px rgba(0,0,1,.55)) drop-shadow(6.3px 12.5px 10.5px rgba(0,0,1,.27));
+	margin: .2em .2em;
+	height: min(44vw, 16em);
+}
+
+#Gallery img{
+	margin: .5em .2em;
+}
+
+#Gallery img:hover{
+	transform: scale(1.01);
+	transition: transform .2s;
+}
+
+#Gallery{
+	width: 90%;
+	margin: auto;
+	line-height: 5em;
+}
+
+#Statement{
+	width: min(54em, 91%);
+	margin: auto;
+	text-align: right;
+	font-size: max(min(2.8vw, 1em),12px);
+}
+
+#Statement img, #BackupStatement img{
+	height: min(22vw, 17em);
+	border-radius: 1em;
+}
+
+#BackupStatement{
+	display:none;
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	font-size: max(min(2.8vw, 1em),12px);
+}
+
+#BackupStatement img{
+	width: 100%;
+	height: auto;
+}
+
+#BackupStatement blockquote{
+	background-color: rgba(53,53,55,1.00);
+	border-right: none;
+	border-top: #52343a medium solid;
+	padding: 1em;
+	border-radius: 0 0 .2em .2em;
+	margin: auto;
+	margin-top: 1em;
+	width: 90%;
+}
+
+#Cover{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(13,13,15,0.78);
+	z-index: 1;
+	display: none;
+}
+
+#Selected{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	transform: translate(-50%, -50%);
+	object-fit: contain;
+	width: 80vw !important;
+	height: 80vh !important;
+	margin: 0;
+}
+
+#About{
+	font-family: "Comfortaa variant0", "Comfortaa", sans-serif, nasinNanpaWeb;
+	text-align: left;
+	margin: auto;
+	width: 85%;
+	text-indent: 3em;
+	
+}
+
+a{
+	color: inherit;
+}
+
+nav{
+	padding: .75em 20% 3.5em 20%;
+	margin-left: -10%;
+	margin-bottom: -1.5em;
+	font-size: 1.3em;
+}
+
+blockquote{
+	background-color: rgba(53,53,55,1.00);
+	border-right: #52343a medium solid;
+	padding: 1em;
+	border-radius: .2em 0 0 .2em;
+	margin: 0 1em 0 0;
+	font-family: "Comfortaa variant0", "Comfortaa", sans-serif, nasinNanpaWeb;
+	filter: drop-shadow(0.5px 0.4px rgba(0,0,1,1)) drop-shadow(0.5px 0.9px 0.8px rgba(0,0,1,.82)) drop-shadow(2px 4.1px 3.4px rgba(0,0,1,.55)) drop-shadow(6.3px 12.5px 10.5px rgba(0,0,1,.27));
+}
+
+#nav-bar{
+	margin: auto;
+	position: relative;
+	width: 80vw;
+	float: left;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+#subtitle{
+    white-space : nowrap;
+	display: inline-block;
+	color: #b1c1d1;
+}
+
+#link{
+	opacity: 0;
+    white-space : nowrap;
+	display: inline-block;
+	font-family: "Comfortaa variant0", "Comfortaa", sans-serif, nasinNanpaWeb;
+	font-weight: bold;
+	letter-spacing: .175em;
+	margin: 0;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #121213;
+  text-shadow: none;
+}
+
+::selection {
+  background: #121213;
+  text-shadow: none;
+}
+
+a{
+	font-family: inherit;
+}
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 2em 1em;
+  padding: 0;
+}
+
+
+textarea {
+  resize: vertical;
+}
+
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+@media only screen and (max-width: 75em) {
+	.eighthWide {
+		width: calc(25% - 1em);
+	}
+
+	.quaterWide {
+		width: calc(50% - 1em);
+	}
+
+	.halfWide {
+		width: calc(100% - 1em);
+	}
+
+}
+
+@media only screen and (max-width: 50em) {
+	#Statement{
+		display: none;
+	}
+
+	#BackupStatement{
+		display: block;
+	}
+}
+@media only screen and (max-width: 55em) {
+	
+	.eighthWide {
+		width: calc(50% - 1em);
+	}
+
+	.quaterWide {
+		width: calc(100% - 1em);
+	}
+}
+	
+	
+
+@media only screen and (max-width: 45em) {
+  /* Style adjustments for viewports that meet the condition */
+	
+	#nameBlock {
+		position: relative;
+	}
+
+	#menu {
+		position: relative;
+		float: right;
+	}
+	nav{
+		margin-bottom: 0;
+	}
+}
+	
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+
