@@ -1,0 +1,139 @@
+@font-face { 
+	font-family: "AtkinsonHyperlegibleMono-ExtraBold";
+	src: url("fonts/AtkinsonHyperlegibleMono-ExtraBold.ttf");
+}
+@font-face { 
+	font-family: "AtkinsonHyperlegibleNext-ExtraBold";
+	src: url("fonts/AtkinsonHyperlegibleNext-ExtraBold.ttf");
+}
+@font-face { 
+	font-family: "AtkinsonHyperlegibleNext-Bold";
+	src: url("fonts/AtkinsonHyperlegibleNext-Bold.ttf");
+}
+@font-face { 
+	font-family: "AtkinsonHyperlegibleNext-BoldItalic";
+	src: url("fonts/AtkinsonHyperlegibleNext-BoldItalic.ttf");
+}
+@font-face { 
+	font-family: "AtkinsonHyperlegibleNext-ExtraLightItalic";
+	src: url("fonts/AtkinsonHyperlegibleNext-ExtraLightItalic.ttf");
+}
+@font-face { 
+	font-family: "AtkinsonHyperlegibleNext-Regular";
+	src: url("fonts/AtkinsonHyperlegibleNext-Regular.ttf");
+}
+
+body {
+	font-family: "AtkinsonHyperlegibleNext-Regular", Sans-serif;
+	line-height: 1.5em;
+}
+header{
+	display:inline-block;
+}
+div{
+	display:inline-block;
+}
+.button{
+	display:inline-block;
+	border:1pt solid transparent;
+	border-image:url("content/border white.svg") 40% / 9pt / 3pt;
+}
+header img.button{
+	margin: 4pt 8pt 8pt 4pt;
+	height:11.5em;
+	display: inline-block;
+	float:left;
+	background-color:black;
+}
+a .button{
+	text-decoration-line: underline;
+	padding: 3pt;
+	margin: 4pt 8pt 8pt 4pt;
+}
+.downloads{
+	display:inline-block;
+	margin:0;
+}
+
+h1{
+	font-family: "AtkinsonHyperlegibleMono-ExtraBold", Sans-serif;
+	font-size: 4.5em;
+	letter-spacing: -.079em;
+	font-weight: normal;
+	line-height: 89%;
+	margin: .1em .23em;
+	display: inline-block;
+	float:left;
+}
+.parens{ font-family: "AtkinsonHyperlegibleNext-ExtraBold", Sans-serif; }
+.preParens{ letter-spacing: -.027em; }
+.lParens{ letter-spacing: -.127em; }
+.sParens{ letter-spacing: -.08em; }
+.rParens{ letter-spacing: -.073em; }
+h2{
+	font-family: "AtkinsonHyperlegibleNext-Bold", Sans-serif;
+	font-size: 2.25em;
+	margin: 6pt 0;
+	background-color: #da622a;
+	color: white;
+	display:inline-block;
+	padding: .4em .4em 0 .4em;
+}
+h3{
+	font-family: "AtkinsonHyperlegibleNext-BoldItalic", Sans-serif;
+	font-size: 1.5em;
+	display:inline;
+}
+
+main{
+	padding: 0 27pt;
+}
+section{
+	width:100%;
+	display:inline-block;
+}
+
+hr{
+	border: 1pt solid #bfc0c0;
+	margin: 4.5pt;
+}
+main hr{
+	margin: 0 -13.5pt;
+}
+
+.thirds{
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	margin: 9pt 0;
+	vertical-align: top;
+}
+.leftThird{
+	border-right: 2pt solid #bfc0c0;
+}
+
+.topAlign{
+	vertical-align: top;
+}
+
+.concrete{
+	color: #bfc0c0;
+}
+.redOchre{
+	color: #da622a;
+}
+.invis{
+	visibility: hidden; 
+}
+
+.warning{
+	font-family: "AtkinsonHyperlegibleMono-ExtraBold", Sans-serif;
+	font-size: 2.25em;
+	text-align:right;
+	display:block;
+	margin-right:1em;
+}
+
+strong{
+	font-family: AtkinsonHyperlegibleNext-Bold;
+}
