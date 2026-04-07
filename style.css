@@ -29,6 +29,8 @@ body {
 }
 header{
 	display:inline-block;
+	padding: 0 27pt;
+	margin:auto;
 }
 div{
 	display:inline-block;
@@ -37,15 +39,18 @@ div{
 	display:inline-block;
 	border:1pt solid transparent;
 	border-image:url("content/border white.svg") 40% / 9pt / 3pt;
+	margin: -5pt 1pt 1pt -5pt;
 }
-header img.button{
-	margin: 4pt 8pt 8pt 4pt;
-	height:11.5em;
+img.button{
 	display: inline-block;
 	float:left;
 	background-color:black;
 }
-a .button{
+header img.button{
+	margin: 4pt 8pt 8pt 4pt;
+	height:11.5em;
+}
+a .button, a strong{
 	text-decoration-line: underline;
 	padding: 3pt;
 	margin: 4pt 8pt 8pt 4pt;
@@ -65,12 +70,18 @@ h1{
 	display: inline-block;
 	float:left;
 }
+@media (max-width: 975px) {
+	h1{
+		font-size: 3em;
+		width: 100%;
+	}
+}
 .parens{ font-family: "AtkinsonHyperlegibleNext-ExtraBold", Sans-serif; }
 .preParens{ letter-spacing: -.027em; }
 .lParens{ letter-spacing: -.127em; }
 .sParens{ letter-spacing: -.08em; }
 .rParens{ letter-spacing: -.073em; }
-h2{
+h3{
 	font-family: "AtkinsonHyperlegibleNext-Bold", Sans-serif;
 	font-size: 2.25em;
 	margin: 6pt 0;
@@ -79,14 +90,16 @@ h2{
 	display:inline-block;
 	padding: .4em .4em 0 .4em;
 }
-h3{
+h4{
 	font-family: "AtkinsonHyperlegibleNext-BoldItalic", Sans-serif;
 	font-size: 1.5em;
-	display:inline;
+	display:inline-block;
+	margin: 0pt 9pt;
 }
 
 main{
 	padding: 0 27pt;
+	margin:auto;
 }
 section{
 	width:100%;
@@ -105,11 +118,36 @@ main hr{
 	table-layout: fixed;
 	width: 100%;
 	border-collapse: collapse;
-	margin: 9pt 0;
+	margin: 4.5pt 0;
 	vertical-align: top;
+	text-align:center;
 }
 .leftThird{
 	border-right: 2pt solid #bfc0c0;
+	text-align:left;
+}
+.thirds tr td{
+	padding: 13.5pt;
+}
+.thirds tr td h3{
+	line-height: .6666666;
+}
+.thirds tr td img{
+	width:50%;
+	display: inline-block;
+	float:none;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+@media (max-width: 1000px) {
+	.thirds tr td{
+		width:95%;
+		float:left;
+	}
+	.leftThird{
+		border-right: 0pt;
+		border-bottom: 2pt solid #bfc0c0;
+	}
 }
 
 .topAlign{
