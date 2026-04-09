@@ -133,10 +133,9 @@ main hr{
 	line-height: .6666666;
 }
 .thirds tr td img{
-	width:50%;
+	width:100%;
 	display: inline-block;
 	float:none;
-	aspect-ratio: 1;
 	object-fit: cover;
 }
 @media (max-width: 1000px) {
