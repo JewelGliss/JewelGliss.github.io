@@ -30,6 +30,7 @@ body {
 header{
 	display:inline-block;
 	padding: 0 27pt;
+	padding: 0 11vw;
 	margin:auto;
 }
 div{
@@ -75,6 +76,9 @@ h1{
 		font-size: 3em;
 		width: 100%;
 	}
+	.downloads br{
+		display:none;
+	}
 }
 .parens{ font-family: "AtkinsonHyperlegibleNext-ExtraBold", Sans-serif; }
 .preParens{ letter-spacing: -.027em; }
@@ -99,6 +103,7 @@ h4{
 
 main{
 	padding: 0 27pt;
+	padding: 0 12vw;
 	margin:auto;
 }
 section{
@@ -111,7 +116,7 @@ hr{
 	margin: 4.5pt;
 }
 main hr{
-	margin: 0 -13.5pt;
+	margin: 4pt -13.5pt;
 }
 
 .thirds{
@@ -123,7 +128,7 @@ main hr{
 	text-align:center;
 }
 .leftThird{
-	border-right: 2pt solid #bfc0c0;
+	/*border-right: 2pt solid #bfc0c0;*/
 	text-align:left;
 }
 .thirds tr td{
@@ -143,10 +148,10 @@ main hr{
 		width:95%;
 		float:left;
 	}
-	.leftThird{
+	/*.leftThird{
 		border-right: 0pt;
 		border-bottom: 2pt solid #bfc0c0;
-	}
+	}*/
 }
 
 .topAlign{
@@ -173,4 +178,15 @@ main hr{
 
 strong{
 	font-family: AtkinsonHyperlegibleNext-Bold;
+}
+footer, footer a{
+	font-family: AtkinsonHyperlegibleNext-Bold;
+	color:white;
+	
+}
+footer{
+	background-color:#da622a;
+	margin:0 -18pt -18pt -18pt;
+	padding: 4.5pt 18pt 4.5pt 18pt;
+	text-align:right;
 }
